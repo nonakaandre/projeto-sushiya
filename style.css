@@ -95,7 +95,7 @@ ul.nav-list {
     justify-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .nav-list {
         flex-direction: column;
         align-items: center;
