@@ -24,12 +24,12 @@ html {
     padding: 0;
 }
 
-div#logo , img {
-    display: flex;
-    justify-content: center;
+#logo img {
+    display: block;
     height: 140px;
-    padding-bottom: 30px;
+    margin: 0 auto 30px;
 }
+
 
 header  {
     background-color: black;
@@ -74,36 +74,40 @@ ul.nav-list {
 
 .welcome {
     display: flex;
+    align-items: center; /* alinha verticalmente */
     color: white;
 }
 
+/* TEXTO */
 .welcome > p {
-    display: inline;
-    width: 50%;
+    flex: 1; /* 50% */
     line-height: 2em;
-    font-size: 1.2vw;
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
     padding: 30px;
     margin: 15px;
     border: 1px solid #5c5c5c;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.473);
 }
 
-.welcome > .welcome-img {
-    width: 50%;
-    margin: auto;
-    justify-items: center;
+/* IMAGEM */
+.welcome-img {
+    flex: 1; /* outros 50% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.welcome-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
 @media (max-width: 600px) {
-    .nav-list {
-        flex-direction: column;
-        align-items: center;
-    }
-    .welcome {
-        flex-direction: column;
-        align-items: center;
-    }
 
     .menu-toggle {
         display: block;
@@ -130,8 +134,10 @@ ul.nav-list {
     .welcome > p,
     .welcome > .welcome-img {
         width: 100%;
+        font-size: 1rem;
     }
 }
+
 
 
 
