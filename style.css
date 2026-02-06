@@ -72,7 +72,7 @@ h1 {
     font-size: clamp(1.5rem, 2vw, 2.5rem);
 }
 
-.container > h2 {
+.section > h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: clamp(1.2rem, 1.5vw, 2rem);
@@ -82,8 +82,8 @@ h1 {
     padding-bottom: 30px;
 }
 
-/* SEÇÃO WELCOME */
-.container {
+/* SEÇÃO SECTION */
+.section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,7 +91,7 @@ h1 {
 }
 
 
-.welcome-content {
+.section-content {
     display: flex;
     flex: 1;
     gap: 80px;
@@ -101,8 +101,7 @@ h1 {
     margin-top: 30px;
 }
 
-.welcome > p {
-    flex: 1;
+.section-content > p {
     line-height: 2em;
     font-size: clamp(1rem, 1.2vw, 1.2rem);
     padding: 30px;
@@ -110,14 +109,19 @@ h1 {
    
 }
 
-.welcome-img {
-    flex: 1;
+.section-img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.welcome-img img {
+.section-content > p,
+.section-img {
+    flex: 1 1 300px;
+}
+
+
+.section-img img {
     max-width: 100%;
     height: auto;
 }
@@ -140,12 +144,12 @@ h1 {
         max-height: 300px;
     }
 
-    .welcome {
+    .section {
         flex-direction: column;
     }
 
-    .welcome > p,
-    .welcome-img {
+    .section > p,
+    .section-img {
         width: 80%;
     }
 }
