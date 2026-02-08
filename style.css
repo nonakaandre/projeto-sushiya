@@ -31,6 +31,23 @@ header {
     margin: 20px auto;
 }
 
+.social {
+    display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.social a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.social a:hover {
+  color: #fff;
+}
+
 /* MENU */
 .menu-toggle {
     display: none;
@@ -106,6 +123,7 @@ h1 {
     font-size: clamp(1rem, 1.2vw, 1.2rem);
     padding: 30px;
     margin: 15px;
+    text-align: justify
    
 }
 

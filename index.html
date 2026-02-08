@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sushiya</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -13,15 +15,21 @@
         <img src="imagens/logo.p.png" alt="Logo Sushiya">
     </div>
 
+    <div class="social">
+      <a href="https://www.instagram.com/sushiyaemcasa/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/5514996015899" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://sushiyaemcasa.com.br/" target="_blank"><i class="fas fa-link"></i></a>
+    </div>
+
     <button class="menu-toggle" aria-expanded="false" aria-label="Abrir menu">
         ☰
     </button>
 
     <nav class="navbar">
         <ul class="nav-list">
-            <li><a href="#">Quem somos</a></li>
-            <li><a href="#">Peixes</a></li>
-            <li><a href="#">Shoyu</a></li>
+            <li><a href="#missao">Nossa missão</a></li>
+            <li><a href="#peixe">Peixes</a></li>
+            <li><a href="#shoyu">Shoyu</a></li>
             <li><a href="#">Arroz</a></li>
             <li><a href="#">Nigiri</a></li>
         </ul>
@@ -30,9 +38,9 @@
 
 <main>
     <h1>Menu Guide Sushiya</h1>
-    <section class="section">
+    <section class="section" id="missao">
         
-        <h2 class="section-title">Quem somos</h2>
+        <h2 class="section-title">Nossa missão</h2>
         <div class="section-content">
             <p>
                 No <strong>Sushiya</strong>, <br> 
@@ -50,12 +58,12 @@
                 Fazemos sushi para quem gosta de comer bem.
             </p>
             <div class="section-img">
-                <img src="https://picsum.photos/200/300" alt="Quem somos">
+                <img src="imagens/sushiya-frete.jpeg" width="300" alt="Quem somos">
             </div>
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="peixe">
         
         <h2 class="section-title">Peixes</h2>
         <div class="section-content">
@@ -69,10 +77,30 @@
                 Cada etapa existe para valorizar o ingrediente e entregar uma experiência mais precisa e equilibrada.
             </p>
             <div class="section-img">
-                <img src="imagens/sea-food.jpg" alt="Quem somos">
+                <img src="imagens/sea-food.jpg" width="300" alt="Peixes">
             </div>
         </div>
     </section>
+
+    <section class="section" id="shoyu">
+        
+        <h2 class="section-title">Shoyu</h2>
+        <div class="section-content">
+            <p>
+                O shoyu que usamos: <strong>Kikkoman</strong><br>
+
+                Kikkoman não é “shoyu famoso”. É <strong>referência técnica</strong>. <br>
+                Fundada no Japão no século XVII, a marca mantém até hoje o método natural de fermentação, sem atalhos químicos. Soja, trigo, água e sal. Tempo como ingrediente principal. O resultado é um shoyu equilibrado, com profundidade de umami, salinidade precisa e aroma limpo. Ele <strong>realça o peixe</strong>, não mascara.
+
+                É por isso que escolhemos Kikkoman: consistência, tradição e respeito ao produto — os mesmos princípios que aplicamos ao nosso peixe.
+            </p>
+            <div class="section-img">
+                <img src="imagens/kikkoman.webp" width="300" alt="Quem somos">
+            </div>
+        </div>
+    </section>
+
+
     
 </main>
 
