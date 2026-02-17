@@ -141,14 +141,39 @@ h1 {
 }
 
 .section-content > p,
-.section-img {
-    flex: 1 1 300px;
+.section-img , .card-button{
+    flex: 1 1 1 300px;
+
 }
 
 
 .section-img img {
     max-width: 100%;
     height: auto;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.card-button:hover {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #353535;
+    color: white;
+    margin-top: 30px;
 }
 
 /* RESPONSIVO */
